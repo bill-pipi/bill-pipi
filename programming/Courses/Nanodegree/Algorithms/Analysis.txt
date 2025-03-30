@@ -1,0 +1,120 @@
+7. HTTPRouter using a Trie
+
+
+A router trie is a trie, the exception is a list of pages separated by “/” and a handler, not a word and whether it is one or not. Router tries are in directories and website browsers and are used to display links from nodes to nodes. 
+
+
+Time Complexity: O(n)
+A router trie’s time complexity is the same as its parent data structure: O(n). The implementation for appending and finding are O(n the length of the word) time complexity; traversing a node and its children recursively by characters of a string. 
+
+
+Space Complexity: O(n * m)
+Though a trie is a practical data structure, it is not guaranteed a common prefix, the basic definition of a trie. Therefore, the number of nodes is the number of distinct words and the average length of the words: O(n * m). (Pasted from Explanation 5)
+
+
+
+
+
+
+6. Max and Min in an Unsorted Array
+
+
+The two solutions are iterating through a list twice, bubbling the min and max to the left and right, or have a reference to the min and max and comparing each element. 
+
+
+Time Complexity: O(n)
+The implementations either require iterating through the list at least once or twice at most. 
+
+
+Space Complexity: O(1)
+The space complexity, in this case, is constant; two variables keep track of the min and max. Bubble sort time complexity, on the other hand, is only a single variable, the index of the bubbled value. 
+
+
+
+
+
+
+5. Autocomplete with Tries
+
+
+Every individual node has a variable: if a node a word, value, and children. While traversing a Trie and a string, if the character is not in a node’s children, append it (Append implementation) to the node’s children and continue, or return False (Find). If not - the Trie appended the prefix - continue recursively with the prefix node’s child. If the string is iterated through, break or return whether or not the node is a word. To determine the words that start with a prefix is the same notion as returning the leaf nodes of a tree. 
+
+
+Time Complexity: O(n)
+O(N), the length of the word, is the time complexity for either the implementation of append or find, traversing the tree down n times. Implementing prefix involves determining the node at the prefix, O(n the length of the prefix), and returning the leaf nodes which are words O(n the nodes above the prefix). 
+
+
+Space Complexity: O(n * m) : 
+Though a trie is a practical data structure, it is not guaranteed a common prefix, the basic definition of a trie. Therefore, the number of nodes is the number of distinct words and the average length of the words: O(n * m). 
+
+
+
+
+
+
+4. Dutch National Flag Problem
+
+
+No algorithm sorts a list in linear time. Though lists are not sorted in linear time, there is a certainty that the elements are either 0, 1, or 2. After iterating through the list once and incrementing variables for 0, 1, and 2, subsets for each variable are appended to a list in increasing order. 
+
+
+Time Complexity: O( n )
+The algorithm would be pointless if the list contained more than three values (the predetermined variables). The time complexity is O( n ) because there are individual variables for each unique element and the order of the variables. 
+
+
+Space Complexity: O( 1 )
+The space complexity is constant, the input list isn’t an argument in the complexity and doesn’t affect the number of variables. 
+
+
+
+
+
+
+3. Rearrange Array Elements
+
+
+The solution is to set the maximum value in the list to the number’s highest digit place and vice versa for the whole list. Though a built-in python library is not allowed, all of the sorting algorithms demonstrated in the course can be re-implemented by hand. These algorithms are either O(n^2) or O(n log n) time complexity, e. g. heap sort, merge sort, and quick sort.
+
+
+Time Complexity: O( n log n )
+The average time complexity of a sorting algorithm is O(n log n), e. g. heap sort. A heap sort time complexity involves appending and deleting to and from a self-rotating binary tree for n times. The methods of the insert are both O(log n) time complexity, since traversing and rotating the height of the tree is log n. Hence, heap sort is O( n log n). 
+
+
+Space Complexity: O( n ) 
+The time complexity is either O( n ) or O( 1 ), determined by whether or not the heap self-rotates for every time a new value is appended or not. Other than that, rearranging the digits itself is a constant space complexity. 
+
+
+
+
+
+
+2. Search in a Rotated Array
+
+
+The setback, in this case, the list is rotated. A binary search requires the list sorted. The list is ordered, though rotated around a pivot. The algorithm to index the pivot is to narrow down a list into halves, etc, given which half the pivot is in (whether or not the first element is less than the last one). Once the pivot index is determined, the elements left or right of the pivot are binary searched.  
+
+
+Time Complexity: O(log n )
+Though the index of the pivot is not resolved with binary search, it can in a similar fashion and time complexity. Instead of linearly iterating and checking every element, it halves the half the pivot is in, narrowing down to an element. 
+
+
+Space Complexity: O(1)
+Binary search, along with pivot search, have two variables for the index, and the average. The only space complexity is that of the index, as iterating through the values of a list doesn’t require anything other than the index.
+
+
+
+
+
+
+1. Finding the Square Root of an Integer
+
+
+The base-case algorithm is linearly iterating through every value from 0 to the number until the square is approx. the square root. On the other hand, another algorithm would be to recursively narrow what the value is on whether it’s square is less or greater than the number. A setback is it would require a parameter for the degree of accuracy (an irrational square root). 
+
+
+Time Complexity: O(log n )
+Instead of a linear time iterating through every value, the algorithm is similar to a binary search (log n time complexity). Though the time complexity is O(log n), the time complexity is infinite for an irrational number. A solution to the setback is to visualize a list of possible square roots, all to a degree of accuracy. The time complexity, if the list is the argument, would be the degree of accuracy, or O(log n time complexity).
+
+
+Space Complexity: O(1)
+In a similar fashion to binary search, the to - from which the square root is in are the only variables altered and initialized.
