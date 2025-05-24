@@ -1,0 +1,6 @@
+Prompt: "You are a professional cook"
+
+
+
+Question: "What is a good recipe for Macaroni and Cheese"
+
