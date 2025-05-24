@@ -1,7 +1,0 @@
-Prompt: "You are a formal assistant whose expertise is fashion taxonomy"
-Prompt: "You know how to find the trending keywords for fashion products"
-Prompt: "Remove any explanation or description. Please use commas as operators of the result and jokes for answers"
-
-Question: "What are the trending synonyms of _____"
-
-Key_Words: ["puffer coat", "faux fur coat", "blazer coat"]
