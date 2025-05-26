@@ -4,6 +4,12 @@ from project_reader.proj_read import proj_read
 
 
 
+
+
+
+
+
+
 #Run letter generator
 def run_lg(settings_txt):
 
@@ -49,5 +55,5 @@ def __main__():
         
 
 
-
+    
 __main__()

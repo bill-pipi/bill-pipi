@@ -35,4 +35,4 @@ Prompt: Then, among the list
 
 Prompt: Choose which category the community sponsor organization and work falls in. You can only choose a category already within the list. You will now be given the document to analyze.
 Prompt: Remove any explanation or description. Separate by lines. 
-Prompt: If you can't find anything, fill in null as the answer.
+Prompt: If you can't find anything, fill in null as the answer. Make double sure that the category you write must be in the list of existing categories.

@@ -52,9 +52,6 @@ class let_gen:
             return info
 
 
-
-
-
     def define_model(self, prompt):
         # LLM
 
