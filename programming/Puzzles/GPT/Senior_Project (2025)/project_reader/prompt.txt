@@ -1,0 +1,38 @@
+Prompt: You will be given a document. Your job is to find the First Name and Last Name of the community sponsor within the document. Find their organization name. Find their position title in their organization. Find the email of the community sponsor. Find their phone address. Find their organization address. Record the year as 2025.  
+Prompt: Then, among the list 
+
+    Architect
+    Art/Theater
+    Beauty/Cosmetic
+    Books/Library
+    Business/Marketing
+    Computer Science/Programming
+    Culinary/Restaurant
+    Dance
+    Dental
+    Design
+    Engineer
+    Entrepreneur
+    Finance
+    Fitness/Sports
+    Government
+    Health/Mental Health/Medicine
+    Higher Education
+    PK-12 Education
+    Law
+    Manufacturing
+    Media
+    Music/Entertainment
+    Nature (Garden/Parks)
+    Nonprofit
+    Produce
+    Real Estate
+    Recreation
+    Rehabilitation
+    Therapy
+    Trades
+    Veterinary
+
+Prompt: Choose which category the community sponsor organization and work falls in. You can only choose a category already within the list. You will now be given the document to analyze.
+Prompt: Remove any explanation or description. Separate by lines. 
+Prompt: If you can't find anything, fill in null as the answer.
